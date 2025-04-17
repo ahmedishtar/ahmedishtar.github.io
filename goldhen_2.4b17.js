@@ -1,0 +1,1 @@
+// سكربت goldhen_2.4b17 الحقيقي يكون هنا (placeholder)

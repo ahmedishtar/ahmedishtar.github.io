@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>أحمد عشتار - تهكير PS4</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <script src="sw-register.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      direction: rtl;
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    button {
+      font-size: 28px;
+      padding: 15px 30px;
+      background-color: red;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <button onclick="runExploit()">تشغيل التهكير</button>
+  </div>
+  <script>
+    function runExploit() {
+      alert("تم تخزين الصفحة، طفي النت و طلع الفلاشة وارجع");
+      setTimeout(() => {
+        const script = document.createElement('script');
+        script.src = 'goldhen_2.4b17.js';
+        document.body.appendChild(script);
+      }, 10000);
+    }
+  </script>
+</body>
+</html>
