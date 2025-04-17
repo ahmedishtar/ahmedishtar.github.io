@@ -41,12 +41,9 @@
   </div>
   <script>
     function runExploit() {
-      alert("تم تخزين الصفحة، طفي النت و طلع الفلاشة وارجع");
-      setTimeout(() => {
-        const script = document.createElement('script');
-        script.src = 'goldhen_2.4b17.js';
-        document.body.appendChild(script);
-      }, 10000);
+      const script = document.createElement('script');
+      script.src = 'goldhen_2.4b17.js';
+      document.body.appendChild(script);
     }
   </script>
 </body>
