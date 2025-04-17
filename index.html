@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تهكير PS4 - أحمد عشتار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="manifest.json">
+  <script src="sw-register.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: sans-serif;
+    }
+    .center-button {
+      position: absolute;
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+    }
+    button {
+      padding: 20px 50px;
+      font-size: 26px;
+      background-color: #e60000;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-button">
+    <button onclick="launchExploit()">تشغيل التهكير</button>
+  </div>
+
+  <script>
+    function launchExploit() {
+      alert("ادخل الفلاش وانتظر 10 ثواني ثم اضغط موافق");
+      const script = document.createElement('script');
+      script.src = 'goldhen_2.4b17.js';
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
